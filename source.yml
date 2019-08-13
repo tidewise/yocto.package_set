@@ -1,0 +1,15 @@
+name: yocto
+version_control:
+    - tools/poky:
+        type: git
+        url: git://git.yoctoproject.org/poky
+        tag: yocto-2.7.1
+    - tools/yocto/meta-openembedded:
+        type: git
+        url: git://git.openembedded.org/meta-openembedded
+        branch: warrior
+    - tools/yocto/meta-bbb:
+        github: https://github.com/jumpnow/meta-bbb
+        branch: warrior
+
+

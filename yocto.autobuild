@@ -1,0 +1,6 @@
+import_package 'tools/poky' do |pkg|
+    pkg.depends_on 'yocto-deps'
+end
+import_package 'tools/yocto/meta-bbb'
+import_package 'tools/yocto/meta-openembedded'
+
