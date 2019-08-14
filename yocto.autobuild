@@ -1,6 +1,9 @@
 import_package 'tools/poky' do |pkg|
     pkg.depends_on 'yocto-deps'
+    pkg.env_add_path 'PATH', File.expand_path('scripts', __dir__)
 end
-import_package 'tools/yocto/meta-bbb'
 import_package 'tools/yocto/meta-openembedded'
+import_package 'tools/yocto/meta-mender'
+import_package 'tools/yocto/meta-mender-community'
 
+require_relative 'yocto_package'

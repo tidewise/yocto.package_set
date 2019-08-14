@@ -3,13 +3,20 @@ version_control:
     - tools/poky:
         type: git
         url: git://git.yoctoproject.org/poky
-        tag: yocto-2.7.1
+        branch: thud
+        tag: yocto-2.6.2
     - tools/yocto/meta-openembedded:
         type: git
         url: git://git.openembedded.org/meta-openembedded
-        branch: warrior
+        branch: thud
+    - tools/yocto/meta-mender:
+        github: mendersoftware/meta-mender
+        branch: thud
+    - tools/yocto/meta-mender-community:
+        github: mendersoftware/meta-mender-community
+        branch: thud
     - tools/yocto/meta-bbb:
-        github: https://github.com/jumpnow/meta-bbb
-        branch: warrior
+        github: jumpnow/meta-bbb
+        branch: thud
 
 

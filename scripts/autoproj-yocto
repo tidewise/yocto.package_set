@@ -1,0 +1,16 @@
+#! /bin/sh -e
+
+package=$1
+shift
+
+sourcedir=$(alocate "$package")
+builddir=$(alocate -b "$sourcedir")
+
+poky=$(alocate "tools/poky")
+OEROOT=$poky
+BDIR=$builddir
+. $poky/oe-init-build-env
+
+cd "$builddir"
+"$@"
+
